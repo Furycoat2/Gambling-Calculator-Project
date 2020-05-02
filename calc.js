@@ -1,4 +1,6 @@
 
+// This would be 200% more spahgetti without inclement. Thanks man!
+
 // Actual calculate.
 function calculate() {
 	
@@ -6,5 +8,6 @@ function calculate() {
 	
 	let target = document.getElementById("target").value ;
 		
-		document.getElementById("TargetField").innerHTML = (target - current)/5;
+		// Gain from a bet is (bet*5)-bet, therefore (target - current)/4 is the amount needed right?
+		document.getElementById("TargetField").innerHTML = (target - current)/4;
 }
