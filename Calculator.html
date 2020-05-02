@@ -1,0 +1,49 @@
+<html>
+<body onload="declare()">
+<!-- This is the title, above it is a simple on-page-load thingy. -->
+<h1>"Gambling Problem" Bet Calculator</h1>
+
+<h2>Type in your goal! If it's resulting bet is higher than 100, try a smaller goal first. The second bar is your current currency.</h1>
+
+<h3>This calculator should give you the most ideal bet to put every time.</h2>
+<!-- Button to make it run. -->
+<button type="button" onclick="thisFuncyAF()">Go go gambling problem!</button>
+<!-- Value we need to get to. -->
+<label for="target">Goal Currency</label>
+<input type="number" id="target" value="0">
+<!-- Value we have. -->
+<label for="current">Current Currency:</label>
+<input type="number" id="current" value="0">
+<!-- The result of the calculate below will appear here. -->
+<p id="TargetField">0</p>
+
+<script>
+// I haven't the faintest clue if this is needed but i'm doing it anyway to be safe.
+function declare() {
+let A = 0
+let B = 0
+let tempVal = 0
+let tempVal2 = 0
+let Out = 0
+}
+// Actual calculate.
+function thisFuncyAF() {
+	
+	B = document.getElementById("current").value ;
+	
+	A = document.getElementById("target").value ;
+	
+	tempVal = A-B ;
+	
+	tempVal2 = tempVal/5
+	
+	Out = tempVal2 ;
+	
+ document.getElementById("TargetField").innerHTML = Out;
+}
+</script>
+
+
+
+</body>
+</html>
